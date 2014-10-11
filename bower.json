@@ -1,17 +1,21 @@
 {
   "name": "chime",
   "main": "chime.js",
-  "version": "0.1.1",
+  "version": "0.94.0",
   "homepage": "https://github.com/toyoshim/chime",
   "authors": [
     "Takashi Toyoshima <toyoshim@gmail.com>"
   ],
-  "description": "chime is a library to compose chitune sounds",
+  "description": "chime is a library to playback chitune sounds",
   "license": "New BSD",
   "ignore": [
-    "**/.*"
+    "**/.*",
+    "compat.js",
+    "makefile",
+    "test.html"
   ],
   "devDependencies": {
-    "tss": "~0.94.0"
+    "tss": "~0.94.0",
+    "uglify-js": "~1.3.5"
   }
 }
