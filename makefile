@@ -12,7 +12,7 @@ tools:
 
 build:
 	./bower_components/uglify-js/bin/uglifyjs \
-		--output chime-0.94.min.js \
+		--output chime-0.94.1.min.js \
 		compat.js \
 		bower_components/tss/js/tss/AudioLooper.js \
 		bower_components/tss/js/tss/MasterChannel.js \

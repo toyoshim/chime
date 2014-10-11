@@ -1,7 +1,7 @@
 {
   "name": "chime",
   "main": "chime.js",
-  "version": "0.94.0",
+  "version": "0.94.1",
   "homepage": "https://github.com/toyoshim/chime",
   "authors": [
     "Takashi Toyoshima <toyoshim@gmail.com>"
@@ -15,7 +15,7 @@
     "test.html"
   ],
   "devDependencies": {
-    "tss": "~0.94.0",
+    "tss": "~0.94.1",
     "uglify-js": "~1.3.5"
   }
 }
