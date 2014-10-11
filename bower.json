@@ -1,0 +1,17 @@
+{
+  "name": "chime",
+  "main": "chime.js",
+  "version": "0.1.1",
+  "homepage": "https://github.com/toyoshim/chime",
+  "authors": [
+    "Takashi Toyoshima <toyoshim@gmail.com>"
+  ],
+  "description": "chime is a library to compose chitune sounds",
+  "license": "New BSD",
+  "ignore": [
+    "**/.*"
+  ],
+  "devDependencies": {
+    "tss": "~0.94.0"
+  }
+}
