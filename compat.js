@@ -1,7 +1,7 @@
-if (!window[exports])
-  exports = {};
-if (!window[Log]) {
-  Log = {
+if (!window['exports'])
+  window['exports'] = {};
+if (!window['Log']) {
+  window['Log'] = {
     enabled: false,
     log: [ ],
     on: function() { Log.enabled = true; },
