@@ -2,10 +2,14 @@
  * @constructor
  */
 window['chime'] = new (function chime() {
-  this.looper = new AudioLooper(1024);
-  this.master = new MasterChannel();
-  this.master.setVolume(1.0);
-  this.looper.setChannel(this.master);
+  this.effectLooper = new AudioLooper(2048);
+  this.effectMaster = new MasterChannel();
+  this.effectMaster.setVolume(1.0);
+  this.effectLooper.setChannel(this.effectMaster);
+  this.bgmLooper = new AudioLooper(8192);
+  this.bgmMaster = new MasterChannel();
+  this.bgmMaster.setVolume(1.0);
+  this.bgmLooper.setChannel(this.bgmMaster);
   this.player = [];
   this.effects = 1;
   this.effectId = 0;
@@ -13,7 +17,10 @@ window['chime'] = new (function chime() {
     this.player[n] = new TsdPlayer();
     this.player[n].device = new TssChannel();
     this.player[n].device.setPlayer(this.player[n]);
-    this.master.addChannel(this.player[n].device);
+    if (n == 0)
+      this.bgmMaster.addChannel(this.player[n].device);
+    else
+      this.effectMaster.addChannel(this.player[n].device);
   }
   for (var i = 0; i <= this.effects; ++i) this.setupChannel(i);
 })();
