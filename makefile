@@ -11,8 +11,7 @@ tools:
 	./node_modules/bower/bin/bower install
 
 build:
-	./bower_components/uglify-js/bin/uglifyjs \
-		--output chime-0.94.1.min.js \
+	cat \
 		compat.js \
 		bower_components/tss/js/tss/AudioLooper.js \
 		bower_components/tss/js/tss/MasterChannel.js \
@@ -20,4 +19,6 @@ build:
 		bower_components/tss/js/tss/TString.js \
 		bower_components/tss/js/tss/TsdPlayer.js \
 		bower_components/tss/js/tss/TssCompiler.js \
-		api.js
+		api.js | \
+	./bower_components/uglify-js/bin/uglifyjs \
+		--output chime-0.94.1.min.js
