@@ -2,7 +2,7 @@
  * @constructor
  */
 window['chime'] = new (function chime() {
-  this.looper = new AudioLooper();
+  this.looper = new AudioLooper(1024);
   this.master = new MasterChannel();
   this.master.setVolume(1.0);
   this.looper.setChannel(this.master);

@@ -21,4 +21,4 @@ build:
 		bower_components/tss/js/tss/TssCompiler.js \
 		api.js | \
 	./bower_components/uglify-js/bin/uglifyjs \
-		--output chime-0.94.1.min.js
+		--output chime-0.94.2.min.js
