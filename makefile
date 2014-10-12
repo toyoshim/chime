@@ -20,4 +20,4 @@ build:
 		bower_components/tss/js/tss/TString.js \
 		bower_components/tss/js/tss/TsdPlayer.js \
 		bower_components/tss/js/tss/TssCompiler.js \
-		chime.js
+		api.js
